@@ -5,4 +5,4 @@ import re
 
 class MedicineItemLoader(ItemLoader):
     default_output_processor = TakeFirst()
-    usage_in = MapCompose(lambda x: re.sub(r'</?a[^>]*>|</?p[^>]*>', '', x))
+    usage_in = MapCompose(lambda x: re.sub(r"</?a[^>]*>|</?p[^>]*>", "", x))
